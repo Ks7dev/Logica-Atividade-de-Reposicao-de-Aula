@@ -1,75 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Funcionários
-    </title>
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <aside>
-        <button>
-            Funcionário
-        </button>
-        <button>
-            Departamentos
-        </button>
-        <button>
-            Filiais
-        </button>
-        <button>
-            Diretoria
-        </button>
-        <button>
-            Gerência
-        </button>
-    </aside>
     <div>
         <header>
-            <div>
-                logo
-            </div>
-            <h1>
-            Consulta de Funcionários
-            </h1>
+            <div>Logo</div>
+            <h1>Consulta de Funcionários</h1>
         </header>
         <main>
             <section>
-            <input type="text" placeholder="Digite o Id desejado" id="input">
-            <div>
-                <img id="imgFuncionario" src="" alt="">
-                <button>
-                    Alterar
-                </button>
-                <p id="idFuncionario">
-                ID:
-                </p>
-                <div>
-                <p id="nomeFuncionario">
-                Name:
-                </p>
-                <p id="cargoFuncionario">
-                Cargo:
-                </p>
-                <p Dept-funcionario>
-                Dept:
-                </p email-funcionario>
-                email:
+                <input
+                    type="text"
+                    placeholder="Digite o ID desejado"
+                    id="campo-busca">
+                <div class="card-funcionario">
+                    <div class="foto-container">
+                        <img id="img-funcionario" src="" alt="">
+                        <button id="botao-alterar">
+                            Alterar
+                        </button>
+                    </div>
+                    <div class="dados-funcionario">
+                        <p id="funcionario-id">
+                            ID:
+                        </p>
+                        <p id="funcionario-nome">
+                            Name:
+                        </p>
+                        <p id="funcionario-cargo">
+                            Cargo:
+                        </p>
+                        <p id="funcionario-depto">
+                            Dept:
+                        </p>
+                        <p id="funcionario-email">
+                            Email:
+                        </p>
+                    </div>
                 </div>
-            </div> 
-            <button>
-                Anterior
-            </button>
-            <button>
-                Proximo
-            </button>
-            </section>         
+                <div class="acoes">
+                    <button
+                        id="butao-anterior"
+                        class="butao-action">
+                        Anterior
+                    </button>
+                    <button
+                        id="butao-proximo"
+                        class="butao-action">
+                        Próximo
+                    </button>
+                </div>
+            </section>
         </main>
-        <footer>Desenvolvido pro Kauan Sousa</footer>
+        <footer>
+            Desenvolvido por Kauan Sousa
+        </footer>
     </div>
-
+    <aside>
+        <button class="butao-aside">Funcionário</button>
+        <button class="butao-aside">Departamentos</button>
+        <button class="butao-aside">Filiais</button>
+        <button class="butao-aside">Diretoria</button>
+        <button class="butao-aside">Gerência</button>
+    </aside>
 </body>
-
 </html>

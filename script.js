@@ -14,3 +14,11 @@ const botaoAnterior = document.querySelector("#butao-anterior");
 
 const dummyurl = `https://dummyjson.com/users/`
 const randourl = `https://randomuser.me/api/?gender=`
+
+
+async function buscarFuncionario(id) {
+    const response = await fetch(`${dummyurl}${id}`);
+    const funcionario = await response.json();
+    const imagemFuncionario = await buscarImg(funcionario.gender);
+}
+
